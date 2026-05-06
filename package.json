@@ -1,0 +1,38 @@
+{
+  "name": "@dandre3000/sandbox",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "DeAundre Payne",
+    "email": "apps.fondling796@passinbox.com",
+    "url": "https://github.com/dandre3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dandre3000/sandbox.git"
+  },
+  "description": "Run code that only has access to an isolated globalThis.",
+  "keywords": [
+    "globalThis",
+    "context",
+    "sandbox",
+    "browser",
+    "node",
+    "bun",
+    "deno"
+  ],
+  "files": [
+    "./build"
+  ],
+  "exports": {
+    "types": "./build/index.d.ts",
+    "import": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && bun build --entrypoints ./src/index.ts --outdir ./build --minify-whitespace --minify-syntax"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "type": "module"
+}

@@ -1,0 +1,9 @@
+server.ts
+index.html
+/node_modules/
+/build/
+/ignore/
+package-lock.json
+bun.lock
+deno.lock
+dandre3000-sandbox*.tgz

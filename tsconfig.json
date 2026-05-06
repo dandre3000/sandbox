@@ -1,0 +1,13 @@
+{
+    "include": ["src/index.ts"],
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "rootDir": "src",
+        "outDir": "build",
+        "noCheck": true
+    }
+}
