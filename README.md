@@ -20,9 +20,9 @@ fn() // bar undefined undefined undefined undefined
 ```
 ## Exports
 
-<h4>type RestrictedGlobalProxy = Pick&lt;typeof globalThis, 'Infinity' | 'NaN' | 'undefined' | </br>'isFinite' | 'isNaN' | 'parseFloat' | 'parseInt' | 'decodeURI' | 'decodeURIComponent' | </br>'encodeURI' | 'encodeURIComponent' | 'Object' | 'Function' | 'Boolean' | 'Symbol' | 'Error' | </br>'AggregateError' | 'RangeError' | 'ReferenceError' | 'SyntaxError' | 'TypeError' | 'URIError' | </br>'Number' | 'BigInt' | 'Math' | 'String' | 'RegExp' | 'Array' | 'Int8Array' | 'Uint8Array' | </br>'Uint8ClampedArray' | 'Int16Array' | 'Uint16Array' | 'Int32Array' | 'Uint32Array' | </br>'BigInt64Array' | 'BigUint64Array' | 'Float16Array' | 'Float32Array' | 'Float64Array' | 'Map' | </br>'Set' | 'WeakMap' | 'WeakSet' | 'ArrayBuffer' | 'DataView' | 'JSON' | 'Iterator' | 'Promise' | </br>'Reflect' | 'Proxy' | 'Intl' | 'console'&gt; & {
-    &emsp;global: RestrictedGlobalProxy;
-    &emsp;globalThis: RestrictedGlobalProxy;
+<h4>type RestrictedGlobalProxy = Pick&lt;'Infinity' | 'NaN' | 'undefined' | 'isFinite' | </br>'isNaN' | 'parseFloat' | 'parseInt' | 'decodeURI' | 'decodeURIComponent' | </br>'encodeURI' | 'encodeURIComponent' | 'Object' | 'Function' | 'Boolean' | 'Symbol' | 'Error' | </br>'AggregateError' | 'RangeError' | 'ReferenceError' | 'SyntaxError' | 'TypeError' | 'URIError' | </br>'Number' | 'BigInt' | 'Math' | 'String' | 'RegExp' | 'Array' | 'Int8Array' | 'Uint8Array' | </br>'Uint8ClampedArray' | 'Int16Array' | 'Uint16Array' | 'Int32Array' | 'Uint32Array' | </br>'BigInt64Array' | 'BigUint64Array' | 'Float16Array' | 'Float32Array' | 'Float64Array' | 'Map' | </br>'Set' | 'WeakMap' | 'WeakSet' | 'ArrayBuffer' | 'DataView' | 'JSON' | 'Iterator' | 'Promise' | </br>'Reflect' | 'Proxy' | 'Intl' | 'console'&gt; & {</br>
+    &emsp;global: RestrictedGlobalProxy;</br>
+    &emsp;globalThis: RestrictedGlobalProxy;</br>
 }</h4>
 
 #### createRestrictedGlobalProxy: () => RestrictedGlobalProxy
