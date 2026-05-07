@@ -27,7 +27,7 @@ fn() // bar undefined undefined undefined undefined
 
 #### createRestrictedGlobalProxy: () => RestrictedGlobalProxy
 
-#### createSandboxFunction: createSandboxFunction: (fn: Function, context: object) => Function
+#### createSandboxFunction: createSandboxFunction: (fn: Function, context: any) => Function
 
 ## License
 
