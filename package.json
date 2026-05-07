@@ -11,8 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/dandre3000/sandbox.git"
   },
-  "description": "Run code that only has access to an isolated globalThis.",
+  "description": "Run code with a temporary globalThis.",
   "keywords": [
+    "global",
     "globalThis",
     "context",
     "sandbox",
@@ -29,9 +30,12 @@
     "import": "./build/index.js"
   },
   "scripts": {
-    "build": "tsc && bun build --entrypoints ./src/index.ts --outdir ./build --minify-whitespace --minify-syntax"
+    "build": "tsc && bun build --entrypoints ./src/index.ts --outdir ./build --minify-whitespace --minify-syntax",
+    "test": "node --test tests/node.test.js && bun test tests/bun.test.js && deno test -A tests/deno.test.js",
+    "prepack": "bun run build && bun run test"
   },
   "devDependencies": {
+    "expect": "^29.7.0",
     "typescript": "^6.0.3"
   },
   "type": "module"
